@@ -55,3 +55,30 @@ const myFunction = function(){ // type is function/function-object
 
 console.log(typeof outsideTemp);
 
+
+//++++++++++++++++++++ memory
+
+// stack --primitive and ,  heap memory --non-primitive
+
+let myDesign = "static"
+let sameDesign = myDesign
+sameDesign = "dynamic"
+
+console.log(myDesign);
+console.log(sameDesign);
+
+let userOne = {
+    email: "ad@gmail.com",
+    age : 10
+}
+
+let userTwo = userOne
+userTwo.email = "addaio@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+// {
+//     email: "as@gmail.com",
+//     age:12
+// }
